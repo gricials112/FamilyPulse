@@ -1,0 +1,79 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: always
+    mem_limit: 256m
+    shm_size: 64m
+    environment:
+      POSTGRES_DB: familypulse
+      POSTGRES_USER: familypulse
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?DB_PASSWORD is required}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U familypulse -d familypulse"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  backend:
+    build: ./backend
+    restart: always
+    mem_limit: 128m
+    environment:
+      PORT: 8081
+      DATABASE_URL: "postgres://familypulse:${DB_PASSWORD}@postgres:5432/familypulse?sslmode=disable"
+      FAMILYPULSE_ADMIN_TOKEN: ${FAMILYPULSE_ADMIN_TOKEN:?FAMILYPULSE_ADMIN_TOKEN is required}
+      FAMILYPULSE_APPLE_CLIENT_ID: ${FAMILYPULSE_APPLE_CLIENT_ID:-com.lwj.FamilyPulse}
+      FAMILYPULSE_SUBSCRIPTION_PRODUCT_IDS: ${FAMILYPULSE_SUBSCRIPTION_PRODUCT_IDS:-com.lwj.FamilyPulse.premium.monthly.v2,com.lwj.FamilyPulse.premium.yearly.v2}
+      FAMILYPULSE_SEED_TEST_ACCOUNTS: ${FAMILYPULSE_SEED_TEST_ACCOUNTS:-true}
+      FAMILYPULSE_RATE_LIMIT_MAX_REQUESTS: ${FAMILYPULSE_RATE_LIMIT_MAX_REQUESTS:-10}
+      FAMILYPULSE_APNS_ENABLED: ${FAMILYPULSE_APNS_ENABLED:-false}
+      FAMILYPULSE_APNS_TOPIC: ${FAMILYPULSE_APNS_TOPIC:-com.lwj.FamilyPulse}
+      FAMILYPULSE_APNS_TEAM_ID: ${FAMILYPULSE_APNS_TEAM_ID:-}
+      FAMILYPULSE_APNS_KEY_ID: ${FAMILYPULSE_APNS_KEY_ID:-}
+      FAMILYPULSE_APNS_PRIVATE_KEY: ${FAMILYPULSE_APNS_PRIVATE_KEY:-}
+      GOMEMLIMIT: ${FAMILYPULSE_GOMEMLIMIT:-96MiB}
+      GOGC: ${FAMILYPULSE_GOGC:-80}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1:8081/api/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 10s
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  nginx:
+    image: nginx:alpine
+    restart: always
+    mem_limit: 64m
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./landing:/usr/share/nginx/html:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      backend:
+        condition: service_healthy
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  pgdata:

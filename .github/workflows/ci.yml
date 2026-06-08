@@ -1,0 +1,88 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  backend-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: backend/go.mod
+          cache-dependency-path: backend/go.sum
+
+      - name: Run Go tests with coverage
+        run: |
+          cd backend
+          make coverage
+
+      - name: Upload backend coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: backend-coverage
+          path: backend/coverage.out
+
+  ios-build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+      - name: Check Xcode version
+        run: xcodebuild -version
+
+      - name: Resolve Swift dependencies
+        run: |
+          cd ios
+          xcodebuild -resolvePackageDependencies \
+            -project FamilyPulse.xcodeproj \
+            -scheme FamilyPulse
+
+      - name: Build iOS app
+        run: |
+          cd ios
+          xcodebuild build \
+            -project FamilyPulse.xcodeproj \
+            -scheme FamilyPulse \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=latest' \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Run iOS tests
+        run: |
+          cd ios
+          mkdir -p ../build
+          rm -rf ../build/ios-tests.xcresult
+          xcodebuild test \
+            -project FamilyPulse.xcodeproj \
+            -scheme FamilyPulse \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=latest' \
+            -enableCodeCoverage YES \
+            -collect-test-diagnostics never \
+            -parallel-testing-enabled NO \
+            -maximum-concurrent-test-simulator-destinations 1 \
+            -resultBundlePath ../build/ios-tests.xcresult \
+            CODE_SIGNING_ALLOWED=NO
+          xcrun xccov view --report --json ../build/ios-tests.xcresult > ../build/ios-coverage.json
+          ../scripts/check_ios_coverage.py ../build/ios-coverage.json 0.95
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs: [backend-test]
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build backend Docker image
+        run: |
+          cd backend
+          docker build -t familypulse-backend:latest .

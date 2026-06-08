@@ -1,0 +1,46 @@
+# Xcode
+ios/DerivedData/
+ios/*.xcworkspace/
+*.xcuserdata
+
+# Backend build artifacts
+backend/target/
+backend/data/
+backend/bin/
+backend/coverage*.out
+*.class
+*.jar
+!backend/target/*.jar
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Env
+.env
+.env.prod
+.env.local
+
+# SSL certs
+ssl/
+
+# Old java backend
+java_old/
+*_old/
+
+# Coverage HTML report
+backend/coverage.html
+
+# Downloaded temp images
+ChatGPT Image*
+
+# Project dashboard (duplicate of landing/dashboard.html)
+dashboard.html
+
+# Node
+node_modules/

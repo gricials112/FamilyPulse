@@ -1,0 +1,3535 @@
+{
+  "sourceLanguage" : "zh-Hans",
+  "strings" : {
+    "" : {
+
+    },
+    "。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "."
+          }
+        }
+      }
+    },
+    "·" : {
+
+    },
+    "\\(appointment.elderName) · \\(appointment.hospital) / \\(appointment.department)" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@ / %@"
+          }
+        }
+      }
+    },
+    "\\(elder.name)\\(action.title)" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%@"
+          }
+        }
+      }
+    },
+    "\\(nextAppointment.elderName) · \\(nextAppointment.title)" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@"
+          }
+        }
+      }
+    },
+    "%@" : {
+
+    },
+    "%@ · %@" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@"
+          }
+        }
+      }
+    },
+    "%@ · %@ / %@" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · %@ / %@"
+          }
+        }
+      }
+    },
+    "%@%@" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@%@"
+          }
+        }
+      }
+    },
+    "%lld 秒内同步" : {
+      "comment" : "Sync status - auto-refresh interval",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto-refresh %llds"
+          }
+        }
+      }
+    },
+    "%lld 项已完成，共 %lld 项" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld 项已完成，共 %2$lld 项"
+          }
+        }
+      }
+    },
+    "%lld/%lld" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$lld/%2$lld"
+          }
+        }
+      }
+    },
+    "10 秒内同步，Push 提醒，全部操作历史，订阅码可激活 4 台设备" : {
+      "comment" : "StoreManager - yearly plan description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10s sync, push alerts, full history, code activates 4 devices"
+          }
+        }
+      }
+    },
+    "30 秒内同步，Push 提醒，最近 7 天操作历史，订阅码可激活 2 台设备" : {
+      "comment" : "StoreManager - monthly plan description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30s sync, push alerts, 7-day history, code activates 2 devices"
+          }
+        }
+      }
+    },
+    "actionKey" : {
+
+    },
+    "App Target" : {
+
+    },
+    "Apple 授权失败: \\(error.localizedDescription)" : {
+      "comment" : "AuthFlowViews - Apple login error with details",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple authorization failed: %@"
+          }
+        }
+      }
+    },
+    "Apple 授权失败: %@" : {
+
+    },
+    "Apple 授权已取消（如果弹窗闪退，请在 Apple Developer Portal 开启 Sign In with Apple）" : {
+      "comment" : "AuthFlowViews - Apple login canceled",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple authorization was canceled. (Enable Sign In with Apple in Apple Developer Portal if it flashes)"
+          }
+        }
+      }
+    },
+    "Apple 登录失败" : {
+      "comment" : "AuthFlowViews - Apple login failed",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple login failed"
+          }
+        }
+      }
+    },
+    "Apple 登录失败，请稍后重试" : {
+
+    },
+    "Apple 登录失败（模拟器需要登录 iCloud）" : {
+      "comment" : "AuthFlowViews - Apple login simulator error",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple login failed (simulator needs iCloud login)"
+          }
+        }
+      }
+    },
+    "Apple 登录成功，但同步家庭数据失败，请稍后重试" : {
+
+    },
+    "elderId" : {
+
+    },
+    "FP-XXXX-XXXX" : {
+
+    },
+    "Privacy Policy" : {
+
+    },
+    "Push 通知" : {
+      "comment" : "SettingsView - Push notifications section",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Push Notifications"
+          }
+        }
+      }
+    },
+    "target" : {
+
+    },
+    "Terms of Use (EULA)" : {
+
+    },
+    "一个家庭可以添加多位老人, 同步墙会按老人分别展示照护状态。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A family can add multiple elders. The feed shows each elder's care status separately."
+          }
+        }
+      }
+    },
+    "一键记录" : {
+
+    },
+    "一键记录吃药、测血压等日常照护操作" : {
+      "comment" : "Widget - description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-tap record meds, blood pressure and daily care"
+          }
+        }
+      }
+    },
+    "下次复查" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next Checkup"
+          }
+        }
+      }
+    },
+    "不提供诊断、治疗、用药剂量或异常判断" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Does not provide diagnosis, treatment, dosage or abnormality assessments"
+          }
+        }
+      }
+    },
+    "不采集病历、处方、化验单或影像资料" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Does not collect medical records, prescriptions, lab results or imaging"
+          }
+        }
+      }
+    },
+    "与" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "and"
+          }
+        }
+      }
+    },
+    "两次输入的密码不一致" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwords do not match"
+          }
+        }
+      }
+    },
+    "个人资料" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        }
+      }
+    },
+    "为了方便家人识别，请输入你的称呼。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter your name so family can identify you."
+          }
+        }
+      }
+    },
+    "为避免采集处方、化验单、影像等敏感个人健康资料，家安不再提供病历上传、附件上传或云端病历夹功能。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FamilyPulse no longer offers medical record upload, attachment upload or cloud storage to avoid collecting sensitive health data."
+          }
+        }
+      }
+    },
+    "之后在设置页面可随时添加老人。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can add elders anytime in Settings."
+          }
+        }
+      }
+    },
+    "二维码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR Code"
+          }
+        }
+      }
+    },
+    "二维码类型" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR Code Type"
+          }
+        }
+      }
+    },
+    "交易验证失败" : {
+      "comment" : "StoreManager - transaction verification failed",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transaction verification failed"
+          }
+        }
+      }
+    },
+    "仅保留给已设置密码的账号和测试审核账号使用。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For accounts with passwords and test review accounts only."
+          }
+        }
+      }
+    },
+    "仅家庭成员可查看同一家庭内的记录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only family members can view records within the same family"
+          }
+        }
+      }
+    },
+    "今天已经完成" : {
+
+    },
+    "今天已经记录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Already recorded today"
+          }
+        }
+      }
+    },
+    "今天的状态已经告诉家人了。" : {
+
+    },
+    "今天要记录什么？" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What to record today?"
+          }
+        }
+      }
+    },
+    "今日" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today"
+          }
+        }
+      }
+    },
+    "今日完成进度" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today's progress"
+          }
+        }
+      }
+    },
+    "今日照护" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Today's Care"
+          }
+        }
+      }
+    },
+    "从小组件快速记录照护操作" : {
+
+    },
+    "你好，\\(elder.name)" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello, %@"
+          }
+        }
+      }
+    },
+    "你好，%@" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello, %@"
+          }
+        }
+      }
+    },
+    "使用条款（EULA）" : {
+
+    },
+    "保存" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
+    "修改密码" : {
+
+    },
+    "先跳过" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip"
+          }
+        }
+      }
+    },
+    "免费" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        }
+      }
+    },
+    "免费 vs 订阅" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free vs Premium"
+          }
+        }
+      }
+    },
+    "免费版" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        }
+      }
+    },
+    "免费版显示最近 10 条，不支持按日期查看" : {
+
+    },
+    "免费用户仍可使用 App 内同步，Push 为订阅权益" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free users can still use in-app sync; Push is a premium feature"
+          }
+        }
+      }
+    },
+    "全部权益" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Benefits"
+          }
+        }
+      }
+    },
+    "关闭 Push 通知" : {
+
+    },
+    "其他端或其他设备可在有效期内输入此码激活；到期后通过此码激活的设备也会同步过期。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Other devices can activate using this code within the validity period; activated devices expire together."
+          }
+        }
+      }
+    },
+    "再次输入新密码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm new password"
+          }
+        }
+      }
+    },
+    "最划算" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Best Value"
+          }
+        }
+      }
+    },
+    "最受欢迎" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Most Popular"
+          }
+        }
+      }
+    },
+    "最后更新 %@" : {
+      "comment" : "Sync status - last updated time prefix",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Last updated %@"
+          }
+        }
+      }
+    },
+    "切回家人模式" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch to Family Mode"
+          }
+        }
+      }
+    },
+    "切换到家人模式" : {
+
+    },
+    "切换到老人模式" : {
+
+    },
+    "切换家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch Family"
+          }
+        }
+      }
+    },
+    "切换照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch Care Recipient"
+          }
+        }
+      }
+    },
+    "创建失败" : {
+      "comment" : "FamilyStore - creation failure fallback",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creation failed"
+          }
+        }
+      }
+    },
+    "创建失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creation failed. Please try again later."
+          }
+        }
+      }
+    },
+    "创建家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create Family"
+          }
+        }
+      }
+    },
+    "创建新家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create New Family"
+          }
+        }
+      }
+    },
+    "删除" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        }
+      }
+    },
+    "删除「\\(action.title)」" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete \"%@\""
+          }
+        }
+      }
+    },
+    "删除「%@」" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete \"%@\""
+          }
+        }
+      }
+    },
+    "删除失败" : {
+
+    },
+    "删除失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deletion failed. Please try again later."
+          }
+        }
+      }
+    },
+    "加入失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to join. Please try again later."
+          }
+        }
+      }
+    },
+    "加入家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Join Family"
+          }
+        }
+      }
+    },
+    "加入已有家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Join Existing Family"
+          }
+        }
+      }
+    },
+    "加载失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to load. Please try again later."
+          }
+        }
+      }
+    },
+    "加载活跃度失败" : {
+
+    },
+    "医院" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hospital"
+          }
+        }
+      }
+    },
+    "升级 Premium 可管理更多家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade to Premium to manage more families"
+          }
+        }
+      }
+    },
+    "升级 Premium 管理多个家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade Premium to Manage Multiple Families"
+          }
+        }
+      }
+    },
+    "即将复查" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upcoming Checkups"
+          }
+        }
+      }
+    },
+    "双击记录今天已完成" : {
+
+    },
+    "取消" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "只显示大按钮，点一下就告诉家人。" : {
+
+    },
+    "可在设置中添加老人" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can add elders in Settings"
+          }
+        }
+      }
+    },
+    "可找回" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recoverable"
+          }
+        }
+      }
+    },
+    "同步" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sync"
+          }
+        }
+      }
+    },
+    "同步失败, 请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sync failed. Please try again later."
+          }
+        }
+      }
+    },
+    "同步家庭数据" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sync family data"
+          }
+        }
+      }
+    },
+    "名字不能为空" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name cannot be empty"
+          }
+        }
+      }
+    },
+    "名字没有变化" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name unchanged"
+          }
+        }
+      }
+    },
+    "后续可在登录页直接使用微信登录此账号。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can use WeChat to log into this account on the login screen."
+          }
+        }
+      }
+    },
+    "商品信息加载失败" : {
+      "comment" : "StoreManager - product info load failed",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to load product info"
+          }
+        }
+      }
+    },
+    "商品信息未加载，请确保项目 Scheme 已配置 StoreKit 配置文件" : {
+      "comment" : "StoreManager - StoreKit config not set up",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product info not loaded. Make sure StoreKit config file is configured in the Scheme."
+          }
+        }
+      }
+    },
+    "商品加载失败: \\(error.localizedDescription)" : {
+      "comment" : "StoreManager - products load failed",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product load failed: %@"
+          }
+        }
+      }
+    },
+    "商品加载失败: %@" : {
+      "comment" : "StoreManager - products load failed format",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Product load failed: %@"
+          }
+        }
+      }
+    },
+    "商品数据为空，请检查 StoreKit 配置" : {
+      "comment" : "StoreManager - no products returned from StoreKit",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No products found. Please check StoreKit configuration."
+          }
+        }
+      }
+    },
+    "复查" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkups"
+          }
+        }
+      }
+    },
+    "复查对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkup For"
+          }
+        }
+      }
+    },
+    "复查时间" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkup Time"
+          }
+        }
+      }
+    },
+    "复查标题" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkup Title"
+          }
+        }
+      }
+    },
+    "复查看板" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checkup Dashboard"
+          }
+        }
+      }
+    },
+    "多" : {
+
+    },
+    "如 已测血糖" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e.g., Blood sugar taken"
+          }
+        }
+      }
+    },
+    "完成" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "完成后留言" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completion Note"
+          }
+        }
+      }
+    },
+    "完成照护记录或登记复查后，家人会在这里看到。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "After completing care records or registering checkups, family can see them here."
+          }
+        }
+      }
+    },
+    "家人最近动态" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recent Family Activity"
+          }
+        }
+      }
+    },
+    "家人完成照护打卡时提醒其他订阅成员" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notify members when someone completes a care action"
+          }
+        }
+      }
+    },
+    "家人登记复查或完成照护后会显示在这里。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family checkups and care updates will appear here."
+          }
+        }
+      }
+    },
+    "家安" : {
+      "comment" : "App brand name - FamilyPulse",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FamilyPulse"
+          }
+        }
+      }
+    },
+    "家安 · Premium" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FamilyPulse · Premium"
+          }
+        }
+      }
+    },
+    "家安只用于家庭照护记录与提醒，不提供诊断、治疗或用药建议。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "FamilyPulse is for family care recording and reminders only, not for diagnosis or medical advice."
+          }
+        }
+      }
+    },
+    "家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family"
+          }
+        }
+      }
+    },
+    "家庭健康同步从这里开始" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family health sync starts here"
+          }
+        }
+      }
+    },
+    "家庭动态" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family Activity"
+          }
+        }
+      }
+    },
+    "家庭名称" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family Name"
+          }
+        }
+      }
+    },
+    "家庭成员" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family Members"
+          }
+        }
+      }
+    },
+    "密码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        }
+      }
+    },
+    "密码已设置，请妥善保存账号" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password set. Please keep your account safe."
+          }
+        }
+      }
+    },
+    "密码至少需要 8 位" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be at least 8 characters"
+          }
+        }
+      }
+    },
+    "密码设置失败" : {
+      "comment" : "FamilyStore - password setup failure fallback",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password setup failed"
+          }
+        }
+      }
+    },
+    "密码设置失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password setup failed. Please try again later."
+          }
+        }
+      }
+    },
+    "少" : {
+
+    },
+    "已切换为免费版（本地）" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switched to Free tier (local)"
+          }
+        }
+      }
+    },
+    "已删除" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deleted"
+          }
+        }
+      }
+    },
+    "已取消" : {
+      "comment" : "AppointmentStatus - canceled",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Canceled"
+          }
+        }
+      }
+    },
+    "已同步" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synced"
+          }
+        }
+      }
+    },
+    "已告诉家人 %@" : {
+
+    },
+    "已喝水" : {
+      "comment" : "Widget - default action name",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drank Water"
+          }
+        }
+      }
+    },
+    "已处理" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        }
+      }
+    },
+    "已完成" : {
+      "comment" : "AppointmentStatus - done",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        }
+      }
+    },
+    "已撤销操作" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Operation undone"
+          }
+        }
+      }
+    },
+    "已散步" : {
+      "comment" : "Widget - default action name",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Went Walking"
+          }
+        }
+      }
+    },
+    "已有订阅码？" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Have a subscription code?"
+          }
+        }
+      }
+    },
+    "已有账号密码登录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login with Account"
+          }
+        }
+      }
+    },
+    "已标记完成" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Marked as completed"
+          }
+        }
+      }
+    },
+    "已添加" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Added"
+          }
+        }
+      }
+    },
+    "已激活订阅" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription activated"
+          }
+        }
+      }
+    },
+    "已激活订阅（模拟器模式）" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription activated (simulator mode)"
+          }
+        }
+      }
+    },
+    "已离线保存，联网后自动补发" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved offline, will auto-sync when connected"
+          }
+        }
+      }
+    },
+    "已绑定" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bound"
+          }
+        }
+      }
+    },
+    "已绑定微信" : {
+
+    },
+    "已补发 \\(flushedCount) 条离线记录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synced %@ offline records"
+          }
+        }
+      }
+    },
+    "已补发 %@ 条离线记录" : {
+      "comment" : "Auto-converted format string",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synced %@ offline records"
+          }
+        }
+      }
+    },
+    "已补发 %lld 条离线记录" : {
+
+    },
+    "已记录" : {
+
+    },
+    "已记录 %@" : {
+
+    },
+    "已记录, 正在同步" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recorded, syncing"
+          }
+        }
+      }
+    },
+    "已设置密码" : {
+
+    },
+    "已设置密码，后续可用密码继续登录。" : {
+
+    },
+    "已设置密码或绑定微信，后续可用对应方式继续登录。" : {
+      "comment" : "SettingsView - account security subtitle when secure",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password or WeChat is set. You can use it to log in later."
+          }
+        }
+      }
+    },
+    "已选择照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Care recipient selected"
+          }
+        }
+      }
+    },
+    "年付" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly"
+          }
+        }
+      }
+    },
+    "年付可按日期查看全部历史，每天最多 10 条" : {
+      "comment" : "FamilyWallView - yearly plan policy text",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly: view full history by date, up to 10 entries/day"
+          }
+        }
+      }
+    },
+    "开发模式" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developer Mode"
+          }
+        }
+      }
+    },
+    "开启 Push 通知" : {
+
+    },
+    "开始使用" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get Started"
+          }
+        }
+      }
+    },
+    "当前" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current"
+          }
+        }
+      }
+    },
+    "当前家庭还没有选定这台手机对应的老人。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No elder has been associated with this device in your family."
+          }
+        }
+      }
+    },
+    "当前密码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current password"
+          }
+        }
+      }
+    },
+    "当前游客账号还没有密码，也未绑定微信。建议至少完成其中一项。" : {
+      "comment" : "SettingsView - account security subtitle when recovery needed",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your guest account has no password or WeChat binding. Please set up at least one."
+          }
+        }
+      }
+    },
+    "当前游客账号还没有密码。建议设置一个密码。" : {
+
+    },
+    "当前版本只保留照护状态同步、复查安排和操作历史。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This version keeps only care status sync, checkup scheduling, and action history."
+          }
+        }
+      }
+    },
+    "当前身份" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current Role"
+          }
+        }
+      }
+    },
+    "待复查" : {
+      "comment" : "AppointmentStatus - planned",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pending"
+          }
+        }
+      }
+    },
+    "待补发 %lld" : {
+      "comment" : "Sync status - pending offline actions count (short)",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pending"
+          }
+        }
+      }
+    },
+    "待补发 %lld 条" : {
+      "comment" : "Sync status - pending offline actions count",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pending"
+          }
+        }
+      }
+    },
+    "微信 SDK 未集成" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat SDK not integrated"
+          }
+        }
+      }
+    },
+    "微信已绑定，后续可直接微信登录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat bound. You can log in with WeChat directly."
+          }
+        }
+      }
+    },
+    "微信授权已取消" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat authorization canceled"
+          }
+        }
+      }
+    },
+    "微信未安装，请先安装微信" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat is not installed. Please install WeChat first."
+          }
+        }
+      }
+    },
+    "微信登录失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat login failed. Please try again later."
+          }
+        }
+      }
+    },
+    "微信登录成功, 请创建或加入家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat login successful. Please create or join a family."
+          }
+        }
+      }
+    },
+    "微信绑定失败" : {
+      "comment" : "FamilyStore - WeChat bind failure fallback",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat binding failed"
+          }
+        }
+      }
+    },
+    "微信绑定失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WeChat binding failed. Please try again later."
+          }
+        }
+      }
+    },
+    "快捷记录每日照护操作" : {
+      "comment" : "Widget - subtitle",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quick record daily care actions"
+          }
+        }
+      }
+    },
+    "恢复会话" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restoring session"
+          }
+        }
+      }
+    },
+    "恢复失败: \\(error.localizedDescription)" : {
+      "comment" : "StoreManager - restore purchases failed",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore failed: %@"
+          }
+        }
+      }
+    },
+    "恢复失败: %@" : {
+      "comment" : "StoreManager - restore purchases failed (format)",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore failed: %@"
+          }
+        }
+      }
+    },
+    "恢复购买" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restore Purchases"
+          }
+        }
+      }
+    },
+    "慢病或备注（可选）" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Condition or Notes (Optional)"
+          }
+        }
+      }
+    },
+    "我是其他家人" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I'm Another Family Member"
+          }
+        }
+      }
+    },
+    "我是家人" : {
+      "comment" : "FamilyUserMode - family mode title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I'm a Family Member"
+          }
+        }
+      }
+    },
+    "我是老人" : {
+      "comment" : "FamilyUserMode - elder mode title",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I'm an Elder"
+          }
+        }
+      }
+    },
+    "打开家安" : {
+
+    },
+    "打开家安 App 开始使用" : {
+      "comment" : "Widget - empty state prompt",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open FamilyPulse to start"
+          }
+        }
+      }
+    },
+    "扫描二维码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan QR Code"
+          }
+        }
+      }
+    },
+    "提示" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice"
+          }
+        }
+      }
+    },
+    "携带清单" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklist"
+          }
+        }
+      }
+    },
+    "携带清单（每行一项）" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checklist (one per line)"
+          }
+        }
+      }
+    },
+    "撤销" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Undo"
+          }
+        }
+      }
+    },
+    "撤销最近一次照护记录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Undo last care record"
+          }
+        }
+      }
+    },
+    "撤销失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Undo failed. Please try again later."
+          }
+        }
+      }
+    },
+    "操作名称" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action Name"
+          }
+        }
+      }
+    },
+    "新增复查安排时提醒家庭成员" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notify family when a new checkup is scheduled"
+          }
+        }
+      }
+    },
+    "新密码（至少 8 位）" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New password (at least 8 characters)"
+          }
+        }
+      }
+    },
+    "日均约 \\(yearlyPerDayDisplay)" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About %@/day"
+          }
+        }
+      }
+    },
+    "日均约 %@" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About %@/day"
+          }
+        }
+      }
+    },
+    "显示名称" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Display Name"
+          }
+        }
+      }
+    },
+    "暂不添加" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip for Now"
+          }
+        }
+      }
+    },
+    "暂无动态" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No updates yet"
+          }
+        }
+      }
+    },
+    "更快同步 · Push 提醒 · 全部历史" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faster sync · Push alerts · Full history"
+          }
+        }
+      }
+    },
+    "更换头像" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change Avatar"
+          }
+        }
+      }
+    },
+    "月付" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly"
+          }
+        }
+      }
+    },
+    "月付可查看最近 7 天，每天最多 10 条" : {
+      "comment" : "FamilyWallView - monthly plan policy text",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly: view last 7 days, up to 10 entries/day"
+          }
+        }
+      }
+    },
+    "有效至 \\(expires.formatted(date: .abbreviated, time: .omitted))" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valid until %@"
+          }
+        }
+      }
+    },
+    "有效至 %@" : {
+
+    },
+    "有效至 %@)" : {
+      "comment" : "Auto-converted format string",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valid until %@"
+          }
+        }
+      }
+    },
+    "服务条款" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terms of Service"
+          }
+        }
+      }
+    },
+    "未知错误" : {
+      "comment" : "StoreManager - unknown error",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown error"
+          }
+        }
+      }
+    },
+    "查看今日状态、复查和家庭成员。" : {
+
+    },
+    "查看全家同步墙, 管理复查与操作历史" : {
+      "comment" : "FamilyUserMode - family mode subtitle",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View family feed, manage checkups and action history"
+          }
+        }
+      }
+    },
+    "查看日期" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View Date"
+          }
+        }
+      }
+    },
+    "标记复查完成" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mark Checkup Done"
+          }
+        }
+      }
+    },
+    "模拟年付已激活（本地）" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yearly plan activated (local)"
+          }
+        }
+      }
+    },
+    "模拟月付已激活（本地）" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly plan activated (local)"
+          }
+        }
+      }
+    },
+    "欢迎使用家安" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to FamilyPulse"
+          }
+        }
+      }
+    },
+    "正在创建游客账号" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creating guest account"
+          }
+        }
+      }
+    },
+    "正在加载" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading"
+          }
+        }
+      }
+    },
+    "正在撤销" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Undoing"
+          }
+        }
+      }
+    },
+    "正在激活订阅码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activating subscription code"
+          }
+        }
+      }
+    },
+    "正在登录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logging in"
+          }
+        }
+      }
+    },
+    "正在绑定微信" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Binding WeChat"
+          }
+        }
+      }
+    },
+    "正在设置密码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setting password"
+          }
+        }
+      }
+    },
+    "正在通过 Apple 登录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signing in with Apple"
+          }
+        }
+      }
+    },
+    "正在通过微信登录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Signing in with WeChat"
+          }
+        }
+      }
+    },
+    "没有可撤销记录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nothing to undo"
+          }
+        }
+      }
+    },
+    "没有当前家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No current family"
+          }
+        }
+      }
+    },
+    "没有我的名字" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not Listed"
+          }
+        }
+      }
+    },
+    "添加" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add"
+          }
+        }
+      }
+    },
+    "添加失败" : {
+
+    },
+    "添加失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to add. Please try again later."
+          }
+        }
+      }
+    },
+    "添加并进入家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add & Enter Family"
+          }
+        }
+      }
+    },
+    "添加并选择" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add & Select"
+          }
+        }
+      }
+    },
+    "添加新照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add New Care Recipient"
+          }
+        }
+      }
+    },
+    "添加照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Care Recipient"
+          }
+        }
+      }
+    },
+    "添加照护项" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Care Action"
+          }
+        }
+      }
+    },
+    "游客登录失败，请检查网络设置" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guest login failed. Please check your network."
+          }
+        }
+      }
+    },
+    "游客账号已创建，请创建或加入家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guest account created. Please create or join a family."
+          }
+        }
+      }
+    },
+    "激活订阅码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activate Code"
+          }
+        }
+      }
+    },
+    "点一下，家人就会看到。" : {
+
+    },
+    "点一下记录给家人" : {
+
+    },
+    "照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Care Recipients"
+          }
+        }
+      }
+    },
+    "照护成员" : {
+      "comment" : "SettingsView - role title default",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Care Member"
+          }
+        }
+      }
+    },
+    "照护记录和复查新增后，订阅家庭成员会收到提醒" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribed family members get notified on new care records and checkups"
+          }
+        }
+      }
+    },
+    "爸妈今天安心了吗？" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How are your parents doing today?"
+          }
+        }
+      }
+    },
+    "用户名" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username"
+          }
+        }
+      }
+    },
+    "用户名不能为空" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username cannot be empty"
+          }
+        }
+      }
+    },
+    "用户名没有变化" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username unchanged"
+          }
+        }
+      }
+    },
+    "病历上传已移除" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medical Record Upload Removed"
+          }
+        }
+      }
+    },
+    "登录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login"
+          }
+        }
+      }
+    },
+    "登记复查" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register Checkup"
+          }
+        }
+      }
+    },
+    "登记时间、负责人和携带清单。家安只做家庭提醒，不提供医疗建议。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register time, assignee and checklist. FamilyPulse is for family reminders only, not medical advice."
+          }
+        }
+      }
+    },
+    "登记留言" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes"
+          }
+        }
+      }
+    },
+    "看今日安心" : {
+
+    },
+    "确定" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "科室" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Department"
+          }
+        }
+      }
+    },
+    "等待处理中" : {
+      "comment" : "StoreManager - purchase pending",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processing"
+          }
+        }
+      }
+    },
+    "管理员" : {
+      "comment" : "SettingsView - role title for ADMIN",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Admin"
+          }
+        }
+      }
+    },
+    "管理家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manage Family"
+          }
+        }
+      }
+    },
+    "绑定微信" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bind WeChat"
+          }
+        }
+      }
+    },
+    "给审核和用户都看得懂的安全承诺" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy commitment clear for reviewers and users"
+          }
+        }
+      }
+    },
+    "给家人" : {
+
+    },
+    "给老人" : {
+
+    },
+    "继续" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continue"
+          }
+        }
+      }
+    },
+    "继续即表示你同意" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "By continuing, you agree to the"
+          }
+        }
+      }
+    },
+    "网络连接失败，请检查网络设置" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Network connection failed. Please check your network settings."
+          }
+        }
+      }
+    },
+    "翻回正面" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flip Front"
+          }
+        }
+      }
+    },
+    "翻转查看权益" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flip to view benefits"
+          }
+        }
+      }
+    },
+    "老人" : {
+      "comment" : "SettingsView - role title for ELDER",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elder"
+          }
+        }
+      }
+    },
+    "老人姓名" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elder's Name"
+          }
+        }
+      }
+    },
+    "老人快捷操作" : {
+      "comment" : "Widget - display name",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quick Care"
+          }
+        }
+      }
+    },
+    "自动续费，随时可在 App Store 取消。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto-renews. Cancel anytime in App Store."
+          }
+        }
+      }
+    },
+    "自动账号" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto Account"
+          }
+        }
+      }
+    },
+    "解锁更快同步、离线暂存和更多家庭管理" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlock faster sync, offline queuing and more family management"
+          }
+        }
+      }
+    },
+    "订阅" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribe"
+          }
+        }
+      }
+    },
+    "订阅与登录均可通过系统能力恢复和管理" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscriptions and accounts can be restored via system settings"
+          }
+        }
+      }
+    },
+    "订阅后开启 Push 通知" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribe for Push Notifications"
+          }
+        }
+      }
+    },
+    "订阅成功" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription Successful"
+          }
+        }
+      }
+    },
+    "订阅权益" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription Benefits"
+          }
+        }
+      }
+    },
+    "订阅版" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium"
+          }
+        }
+      }
+    },
+    "订阅码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscription Code"
+          }
+        }
+      }
+    },
+    "订阅码已复制" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code copied"
+          }
+        }
+      }
+    },
+    "订阅码已激活" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code activated"
+          }
+        }
+      }
+    },
+    "订阅码激活失败" : {
+      "comment" : "FamilyStore - code activation failure fallback",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code activation failed"
+          }
+        }
+      }
+    },
+    "订阅码激活失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code activation failed. Please try again later."
+          }
+        }
+      }
+    },
+    "让关爱不间断" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Care Without Interruption"
+          }
+        }
+      }
+    },
+    "记录失败，请稍后重试" : {
+
+    },
+    "记录照护操作" : {
+
+    },
+    "设置你的名字" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set Your Name"
+          }
+        }
+      }
+    },
+    "设置头像" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set Avatar"
+          }
+        }
+      }
+    },
+    "设置密码" : {
+
+    },
+    "设置登录密码" : {
+
+    },
+    "请先打开 App 登录" : {
+
+    },
+    "请先选择照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please select a care recipient first"
+          }
+        }
+      }
+    },
+    "请创建或加入家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please create or join a family"
+          }
+        }
+      }
+    },
+    "请只记录家庭沟通所需信息，不上传病历、处方、化验单或影像资料。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only record info needed for family communication. Do not upload medical records or images."
+          }
+        }
+      }
+    },
+    "请填写复查完成留言" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please fill in the completion note"
+          }
+        }
+      }
+    },
+    "请填写操作标识和名称" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter action key and name"
+          }
+        }
+      }
+    },
+    "请完整填写复查标题、医院、科室和携带清单" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please complete title, hospital, department and checklist"
+          }
+        }
+      }
+    },
+    "请添加照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please add a care recipient"
+          }
+        }
+      }
+    },
+    "请输入你的名字" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter your name"
+          }
+        }
+      }
+    },
+    "请输入家庭名称" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a family name"
+          }
+        }
+      }
+    },
+    "请输入老人姓名" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter the elder's name"
+          }
+        }
+      }
+    },
+    "请输入订阅码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter subscription code"
+          }
+        }
+      }
+    },
+    "请输入账号和密码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter username and password"
+          }
+        }
+      }
+    },
+    "请输入邀请码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter invite code"
+          }
+        }
+      }
+    },
+    "请选择本人" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please select yourself"
+          }
+        }
+      }
+    },
+    "请选择照护对象" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please select a care recipient"
+          }
+        }
+      }
+    },
+    "负责人" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assignee"
+          }
+        }
+      }
+    },
+    "账号" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username"
+          }
+        }
+      }
+    },
+    "账号安全" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account Security"
+          }
+        }
+      }
+    },
+    "购买失败: \\(error.localizedDescription)" : {
+      "comment" : "StoreManager - purchase failed",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase failed: %@"
+          }
+        }
+      }
+    },
+    "购买失败: %@" : {
+      "comment" : "StoreManager - purchase failed format",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase failed: %@"
+          }
+        }
+      }
+    },
+    "这台手机给谁使用？" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Who will use this phone?"
+          }
+        }
+      }
+    },
+    "进入一键大按钮, 只记录自己的今日状态" : {
+      "comment" : "FamilyUserMode - elder mode subtitle",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Big buttons to record today's status for family to see"
+          }
+        }
+      }
+    },
+    "进入一键记录" : {
+
+    },
+    "进入家庭同步" : {
+
+    },
+    "退出" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave"
+          }
+        }
+      }
+    },
+    "退出后需要重新通过邀请码加入此家庭。确定要退出「\\(store.snapshot.familyName)」吗？" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You'll need a new invite code to rejoin. Are you sure you want to leave \"%@\"?"
+          }
+        }
+      }
+    },
+    "退出后需要重新通过邀请码加入此家庭。确定要退出「%@」吗？" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You'll need a new invite code to rejoin. Are you sure you want to leave \"%@\"?"
+          }
+        }
+      }
+    },
+    "退出失败" : {
+      "comment" : "FamilyStore - leave family failure fallback",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to leave"
+          }
+        }
+      }
+    },
+    "退出失败，请稍后重试" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to leave. Please try again later."
+          }
+        }
+      }
+    },
+    "退出家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave Family"
+          }
+        }
+      }
+    },
+    "退出当前家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave Current Family"
+          }
+        }
+      }
+    },
+    "退出登录" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign Out"
+          }
+        }
+      }
+    },
+    "选择图标" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Icon"
+          }
+        }
+      }
+    },
+    "选择家庭" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select Family"
+          }
+        }
+      }
+    },
+    "选择当前使用手机的老人。选择后会进入一键记录界面。" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select the elder using this phone. Enters one-tap recording mode."
+          }
+        }
+      }
+    },
+    "选择本人" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select Yourself"
+          }
+        }
+      }
+    },
+    "选择要显示的老人操作按钮" : {
+      "comment" : "Widget - config description",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose which elder's action buttons to show"
+          }
+        }
+      }
+    },
+    "选择颜色" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Color"
+          }
+        }
+      }
+    },
+    "邀请码" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invite Code"
+          }
+        }
+      }
+    },
+    "邀请码 \\(store.snapshot.inviteCode)" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invite Code %@"
+          }
+        }
+      }
+    },
+    "邀请码 %@" : {
+      "comment" : "Auto-converted format string",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invite Code %@"
+          }
+        }
+      }
+    },
+    "邀请码无效" : {
+      "comment" : "FamilyStore - invalid invite code error",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid invite code"
+          }
+        }
+      }
+    },
+    "隐私与医疗边界" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy & Medical Boundaries"
+          }
+        }
+      }
+    },
+    "隐私保护" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy Protection"
+          }
+        }
+      }
+    },
+    "隐私政策" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy Policy"
+          }
+        }
+      }
+    },
+    "需完善" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "extractionState" : "stale",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incomplete"
+          }
+        }
+      }
+    },
+    "预览" : {
+      "comment" : "User-facing string in FamilyPulse app",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preview"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

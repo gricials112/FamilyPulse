@@ -1,0 +1,138 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "016423B2",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_locale" : "zh_Hans",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "CHN",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "8CA7EDD8",
+      "localizations" : [
+
+      ],
+      "name" : "main",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "billingPlans" : [
+            {
+              "billingPlanType" : "BILLED_UPFRONT",
+              "commitmentDisplayPrice" : "0.99",
+              "displayPrice" : "0.99",
+              "internalID" : "32AE8FE2",
+              "isEnabled" : true
+            }
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "6",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "6536AADB",
+          "introductoryOffers" : [
+
+          ],
+          "localizations" : [
+            {
+              "description" : "30-second sync, offline resend, 7-day action history",
+              "displayName" : "FamilyPulse Monthly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "30 秒内同步、离线补发、最近 7 天操作历史",
+              "displayName" : "家安月付",
+              "locale" : "zh_Hans"
+            }
+          ],
+          "productID" : "com.lwj.FamilyPulse.premium.monthly.v2",
+          "promotionalImageID" : "05FDDF40",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "月付订阅",
+          "subscriptionGroupID" : "8CA7EDD8",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "billingPlans" : [
+            {
+              "billingPlanType" : "BILLED_UPFRONT",
+              "commitmentDisplayPrice" : "0.99",
+              "displayPrice" : "0.99",
+              "internalID" : "9986E851",
+              "isEnabled" : true
+            }
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "58",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "2575050D",
+          "introductoryOffers" : [
+
+          ],
+          "localizations" : [
+            {
+              "description" : "10-second sync, offline resend, full action history ",
+              "displayName" : "FamilyPulse Yearly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "10 秒内同步、离线补发、全部操作历史",
+              "displayName" : "家安年付",
+              "locale" : "zh_Hans"
+            }
+          ],
+          "productID" : "com.lwj.FamilyPulse.premium.yearly.v2",
+          "promotionalImageID" : "05FDDF40",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "年付订阅",
+          "subscriptionGroupID" : "8CA7EDD8",
+          "type" : "RecurringSubscription",
+          "winbackOffers" : [
+
+          ]
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 5,
+    "minor" : 0
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "pre-commit": {
+      "command": "scripts/precommit.sh",
+      "description": "Run backend & iOS tests with ≥95% coverage check before commit"
+    }
+  }
+}

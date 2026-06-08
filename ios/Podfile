@@ -1,0 +1,7 @@
+platform :ios, '18.0'
+
+target 'FamilyPulse' do
+  use_frameworks!
+
+  pod 'WechatOpenSDK-XCFramework'
+end

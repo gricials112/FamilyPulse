@@ -1,0 +1,16 @@
+PODS:
+  - WechatOpenSDK-XCFramework (2.0.5)
+
+DEPENDENCIES:
+  - WechatOpenSDK-XCFramework
+
+SPEC REPOS:
+  trunk:
+    - WechatOpenSDK-XCFramework
+
+SPEC CHECKSUMS:
+  WechatOpenSDK-XCFramework: ff342ae616bb86df3d236aca38059dfd4bc4a949
+
+PODFILE CHECKSUM: 3d986ff5d467fc3a92e178dddcaa16abe799bb61
+
+COCOAPODS: 1.16.2

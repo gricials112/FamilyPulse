@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85BC7382A2844A1EA6B77242 /* FamilyPulseWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA1F11FD2FD155F200E6ED8C /* FamilyPulseWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACA3DBAB03ED97F6FDBE2285 /* Pods_FamilyPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608CF5DE2973D15F464627F /* Pods_FamilyPulse.framework */; };
+		D00000000000000000000001 /* FamilyPulse/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000001 /* FamilyPulse/ContentView.swift */; };
+		D00000000000000000000002 /* FamilyPulse/Features/AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000002 /* FamilyPulse/Features/AppointmentsView.swift */; };
+		D00000000000000000000003 /* FamilyPulse/Features/AuthFlowViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000003 /* FamilyPulse/Features/AuthFlowViews.swift */; };
+		D00000000000000000000004 /* FamilyPulse/Features/ElderOneTapHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000004 /* FamilyPulse/Features/ElderOneTapHomeView.swift */; };
+		D00000000000000000000005 /* FamilyPulse/Features/FamilyWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000005 /* FamilyPulse/Features/FamilyWallView.swift */; };
+		D00000000000000000000006 /* FamilyPulse/Features/IntroOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000006 /* FamilyPulse/Features/IntroOnboardingView.swift */; };
+		D00000000000000000000007 /* FamilyPulse/Features/RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000007 /* FamilyPulse/Features/RecordsView.swift */; };
+		D00000000000000000000008 /* FamilyPulse/Features/SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000008 /* FamilyPulse/Features/SettingsView.swift */; };
+		D00000000000000000000009 /* FamilyPulse/Services/APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000009 /* FamilyPulse/Services/APIClient.swift */; };
+		D0000000000000000000000A /* FamilyPulse/Services/AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1000000000000000000000A /* FamilyPulse/Services/AppConfiguration.swift */; };
+		D0000000000000000000000B /* FamilyPulse/Services/FamilyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1000000000000000000000B /* FamilyPulse/Services/FamilyStore.swift */; };
+		D0000000000000000000000C /* FamilyPulse/Services/KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1000000000000000000000C /* FamilyPulse/Services/KeychainStore.swift */; };
+		D0000000000000000000000D /* FamilyPulse/Services/StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1000000000000000000000D /* FamilyPulse/Services/StoreManager.swift */; };
+		D0000000000000000000000E /* FamilyPulse/Shared/GlassComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1000000000000000000000E /* FamilyPulse/Shared/GlassComponents.swift */; };
+		D0000000000000000000000F /* FamilyPulse/Shared/Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1000000000000000000000F /* FamilyPulse/Shared/Models.swift */; };
+		D00000000000000000000010 /* FamilyPulse/Services/WeChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000010 /* FamilyPulse/Services/WeChatService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C7990DD3F34496D8DF3E8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA0000000000000000000006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF2D471FF1D6473F8AFD76B1;
+			remoteInfo = FamilyPulseWidget;
+		};
+		CA49612D2FCBD2C500888DEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA0000000000000000000006 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA000000000000000000000D;
+			remoteInfo = FamilyPulse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65BA00EFA00E4723B68D6260 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				85BC7382A2844A1EA6B77242 /* FamilyPulseWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1608CF5DE2973D15F464627F /* Pods_FamilyPulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FamilyPulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C15BEB673FE11E62941A4BCF /* Pods-FamilyPulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FamilyPulse.release.xcconfig"; path = "Target Support Files/Pods-FamilyPulse/Pods-FamilyPulse.release.xcconfig"; sourceTree = "<group>"; };
+		CA1F11FD2FD155F200E6ED8C /* FamilyPulseWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FamilyPulseWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA4961272FCBD2C400888DEC /* FamilyPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamilyPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D10000000000000000000001 /* FamilyPulse/ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/ContentView.swift; sourceTree = "<group>"; };
+		D10000000000000000000002 /* FamilyPulse/Features/AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Features/AppointmentsView.swift; sourceTree = "<group>"; };
+		D10000000000000000000003 /* FamilyPulse/Features/AuthFlowViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Features/AuthFlowViews.swift; sourceTree = "<group>"; };
+		D10000000000000000000004 /* FamilyPulse/Features/ElderOneTapHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Features/ElderOneTapHomeView.swift; sourceTree = "<group>"; };
+		D10000000000000000000005 /* FamilyPulse/Features/FamilyWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Features/FamilyWallView.swift; sourceTree = "<group>"; };
+		D10000000000000000000006 /* FamilyPulse/Features/IntroOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Features/IntroOnboardingView.swift; sourceTree = "<group>"; };
+		D10000000000000000000007 /* FamilyPulse/Features/RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Features/RecordsView.swift; sourceTree = "<group>"; };
+		D10000000000000000000008 /* FamilyPulse/Features/SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Features/SettingsView.swift; sourceTree = "<group>"; };
+		D10000000000000000000009 /* FamilyPulse/Services/APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Services/APIClient.swift; sourceTree = "<group>"; };
+		D1000000000000000000000A /* FamilyPulse/Services/AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Services/AppConfiguration.swift; sourceTree = "<group>"; };
+		D1000000000000000000000B /* FamilyPulse/Services/FamilyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Services/FamilyStore.swift; sourceTree = "<group>"; };
+		D1000000000000000000000C /* FamilyPulse/Services/KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Services/KeychainStore.swift; sourceTree = "<group>"; };
+		D1000000000000000000000D /* FamilyPulse/Services/StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Services/StoreManager.swift; sourceTree = "<group>"; };
+		D1000000000000000000000E /* FamilyPulse/Shared/GlassComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Shared/GlassComponents.swift; sourceTree = "<group>"; };
+		D1000000000000000000000F /* FamilyPulse/Shared/Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Shared/Models.swift; sourceTree = "<group>"; };
+		D10000000000000000000010 /* FamilyPulse/Services/WeChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPulse/Services/WeChatService.swift; sourceTree = "<group>"; };
+		DDBBACC0106B8B9EED3F6146 /* Pods-FamilyPulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FamilyPulse.debug.xcconfig"; path = "Target Support Files/Pods-FamilyPulse/Pods-FamilyPulse.debug.xcconfig"; sourceTree = "<group>"; };
+		FA000000000000000000000E /* FamilyPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamilyPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CA3475CA2FD29DA10085B4AF /* Exceptions for "FamilyPulse" folder in "FamilyPulseWidget" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Localizable.xcstrings,
+			);
+			target = AF2D471FF1D6473F8AFD76B1 /* FamilyPulseWidget */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1AD09C8A8CED4326B0A1C863 /* FamilyPulseWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FamilyPulseWidget;
+			sourceTree = "<group>";
+		};
+		CA4961282FCBD2C400888DEC /* FamilyPulseTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FamilyPulseTests;
+			sourceTree = "<group>";
+		};
+		FA0000000000000000000010 /* FamilyPulse */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CA3475CA2FD29DA10085B4AF /* Exceptions for "FamilyPulse" folder in "FamilyPulseWidget" target */,
+			);
+			path = FamilyPulse;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E571D9E0B0742BFB0C19538 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4961242FCBD2C400888DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA000000000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA3DBAB03ED97F6FDBE2285 /* Pods_FamilyPulse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60B259E792588424C2A35683 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1608CF5DE2973D15F464627F /* Pods_FamilyPulse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EA624FB478C8D9341BE239D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDBBACC0106B8B9EED3F6146 /* Pods-FamilyPulse.debug.xcconfig */,
+				C15BEB673FE11E62941A4BCF /* Pods-FamilyPulse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA49632B2FCBED9900888DEC /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				D10000000000000000000001 /* FamilyPulse/ContentView.swift */,
+				D10000000000000000000002 /* FamilyPulse/Features/AppointmentsView.swift */,
+				D10000000000000000000003 /* FamilyPulse/Features/AuthFlowViews.swift */,
+				D10000000000000000000004 /* FamilyPulse/Features/ElderOneTapHomeView.swift */,
+				D10000000000000000000005 /* FamilyPulse/Features/FamilyWallView.swift */,
+				D10000000000000000000006 /* FamilyPulse/Features/IntroOnboardingView.swift */,
+				D10000000000000000000007 /* FamilyPulse/Features/RecordsView.swift */,
+				D10000000000000000000008 /* FamilyPulse/Features/SettingsView.swift */,
+				D10000000000000000000009 /* FamilyPulse/Services/APIClient.swift */,
+				D1000000000000000000000A /* FamilyPulse/Services/AppConfiguration.swift */,
+				D1000000000000000000000B /* FamilyPulse/Services/FamilyStore.swift */,
+				D1000000000000000000000C /* FamilyPulse/Services/KeychainStore.swift */,
+				D1000000000000000000000D /* FamilyPulse/Services/StoreManager.swift */,
+				D1000000000000000000000E /* FamilyPulse/Shared/GlassComponents.swift */,
+				D1000000000000000000000F /* FamilyPulse/Shared/Models.swift */,
+				D10000000000000000000010 /* FamilyPulse/Services/WeChatService.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		FA0000000000000000000005 = {
+			isa = PBXGroup;
+			children = (
+				FA0000000000000000000010 /* FamilyPulse */,
+				CA4961282FCBD2C400888DEC /* FamilyPulseTests */,
+				1AD09C8A8CED4326B0A1C863 /* FamilyPulseWidget */,
+				FA000000000000000000000F /* Products */,
+				CA49632B2FCBED9900888DEC /* Recovered References */,
+				8EA624FB478C8D9341BE239D /* Pods */,
+				60B259E792588424C2A35683 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA000000000000000000000F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA000000000000000000000E /* FamilyPulse.app */,
+				CA4961272FCBD2C400888DEC /* FamilyPulseTests.xctest */,
+				CA1F11FD2FD155F200E6ED8C /* FamilyPulseWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF2D471FF1D6473F8AFD76B1 /* FamilyPulseWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ABF6EC225FC4838AACF9950 /* Build configuration list for PBXNativeTarget "FamilyPulseWidget" */;
+			buildPhases = (
+				926A2D3ACBD849849FA6305D /* Sources */,
+				2E571D9E0B0742BFB0C19538 /* Frameworks */,
+				5626844121334EF28DEA9BDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1AD09C8A8CED4326B0A1C863 /* FamilyPulseWidget */,
+			);
+			name = FamilyPulseWidget;
+			productName = FamilyPulseWidget;
+			productReference = CA1F11FD2FD155F200E6ED8C /* FamilyPulseWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CA4961262FCBD2C400888DEC /* FamilyPulseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA49612F2FCBD2C500888DEC /* Build configuration list for PBXNativeTarget "FamilyPulseTests" */;
+			buildPhases = (
+				CA4961232FCBD2C400888DEC /* Sources */,
+				CA4961242FCBD2C400888DEC /* Frameworks */,
+				CA4961252FCBD2C400888DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA49612E2FCBD2C500888DEC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				1AD09C8A8CED4326B0A1C863 /* FamilyPulseWidget */,
+				CA4961282FCBD2C400888DEC /* FamilyPulseTests */,
+			);
+			name = FamilyPulseTests;
+			productName = FamilyPulseTests;
+			productReference = CA4961272FCBD2C400888DEC /* FamilyPulseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA000000000000000000000D /* FamilyPulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA000000000000000000001C /* Build configuration list for PBXNativeTarget "FamilyPulse" */;
+			buildPhases = (
+				268C994C64EED79C521FA678 /* [CP] Check Pods Manifest.lock */,
+				FA000000000000000000000A /* Sources */,
+				FA000000000000000000000B /* Frameworks */,
+				FA000000000000000000000C /* Resources */,
+				65BA00EFA00E4723B68D6260 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA6B455DA2824E11953A657E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				FA0000000000000000000010 /* FamilyPulse */,
+			);
+			name = FamilyPulse;
+			productName = FamilyPulse;
+			productReference = FA000000000000000000000E /* FamilyPulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA0000000000000000000006 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					AF2D471FF1D6473F8AFD76B1 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					CA4961262FCBD2C400888DEC = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = FA000000000000000000000D;
+					};
+					FA000000000000000000000D = {
+						CreatedOnToolsVersion = 26.5;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FA0000000000000000000009 /* Build configuration list for PBXProject "FamilyPulse" */;
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = FA0000000000000000000005;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FA000000000000000000000F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA000000000000000000000D /* FamilyPulse */,
+				CA4961262FCBD2C400888DEC /* FamilyPulseTests */,
+				AF2D471FF1D6473F8AFD76B1 /* FamilyPulseWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5626844121334EF28DEA9BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4961252FCBD2C400888DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA000000000000000000000C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		268C994C64EED79C521FA678 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FamilyPulse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		926A2D3ACBD849849FA6305D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA4961232FCBD2C400888DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00000000000000000000001 /* FamilyPulse/ContentView.swift in Sources */,
+				D00000000000000000000002 /* FamilyPulse/Features/AppointmentsView.swift in Sources */,
+				D00000000000000000000003 /* FamilyPulse/Features/AuthFlowViews.swift in Sources */,
+				D00000000000000000000004 /* FamilyPulse/Features/ElderOneTapHomeView.swift in Sources */,
+				D00000000000000000000005 /* FamilyPulse/Features/FamilyWallView.swift in Sources */,
+				D00000000000000000000006 /* FamilyPulse/Features/IntroOnboardingView.swift in Sources */,
+				D00000000000000000000007 /* FamilyPulse/Features/RecordsView.swift in Sources */,
+				D00000000000000000000008 /* FamilyPulse/Features/SettingsView.swift in Sources */,
+				D00000000000000000000009 /* FamilyPulse/Services/APIClient.swift in Sources */,
+				D0000000000000000000000A /* FamilyPulse/Services/AppConfiguration.swift in Sources */,
+				D0000000000000000000000B /* FamilyPulse/Services/FamilyStore.swift in Sources */,
+				D0000000000000000000000C /* FamilyPulse/Services/KeychainStore.swift in Sources */,
+				D0000000000000000000000D /* FamilyPulse/Services/StoreManager.swift in Sources */,
+				D0000000000000000000000E /* FamilyPulse/Shared/GlassComponents.swift in Sources */,
+				D0000000000000000000000F /* FamilyPulse/Shared/Models.swift in Sources */,
+				D00000000000000000000010 /* FamilyPulse/Services/WeChatService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA000000000000000000000A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA6B455DA2824E11953A657E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FamilyPulseWidget;
+			target = AF2D471FF1D6473F8AFD76B1 /* FamilyPulseWidget */;
+			targetProxy = 7C7990DD3F34496D8DF3E8D3 /* PBXContainerItemProxy */;
+		};
+		CA49612E2FCBD2C500888DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA000000000000000000000D /* FamilyPulse */;
+			targetProxy = CA49612D2FCBD2C500888DEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8A06F9A1A08345939678F927 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FamilyPulseWidget/FamilyPulseWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = 96UBFN3CKV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FamilyPulseWidgetSupport/WidgetInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lwj.FamilyPulse.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C48B9764501346DB9CCC6542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FamilyPulseWidget/FamilyPulseWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = 96UBFN3CKV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FamilyPulseWidgetSupport/WidgetInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lwj.FamilyPulse.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA4961302FCBD2C500888DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = TXB93638P7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../FamilyPulse.app",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lwj.FamilyPulseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "";
+				TEST_TARGET_NAME = FamilyPulse;
+			};
+			name = Debug;
+		};
+		CA4961312FCBD2C500888DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = TXB93638P7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../FamilyPulse.app",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lwj.FamilyPulseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "";
+				TEST_TARGET_NAME = FamilyPulse;
+			};
+			name = Release;
+		};
+		FA000000000000000000001A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA000000000000000000001B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA000000000000000000001D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDBBACC0106B8B9EED3F6146 /* Pods-FamilyPulse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FamilyPulse/FamilyPulse.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 96UBFN3CKV;
+				ENABLE_PREVIEWS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "家安";
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wxYOUR_APP_ID_HERE);}\n)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_LSApplicationQueriesSchemes = "weixin weixinULAPI weixinURLParamsAPI";
+				INFOPLIST_KEY_NSCameraUsageDescription = "扫描二维码以加入家庭或激活订阅";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "(\nremote-notification\n)";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lwj.FamilyPulse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA000000000000000000001E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15BEB673FE11E62941A4BCF /* Pods-FamilyPulse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FamilyPulse/FamilyPulse.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = 96UBFN3CKV;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "家安";
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wxYOUR_APP_ID_HERE);}\n)";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_LSApplicationQueriesSchemes = "weixin weixinULAPI weixinURLParamsAPI";
+				INFOPLIST_KEY_NSCameraUsageDescription = "扫描二维码以加入家庭或激活订阅";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = "(\nremote-notification\n)";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lwj.FamilyPulse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ABF6EC225FC4838AACF9950 /* Build configuration list for PBXNativeTarget "FamilyPulseWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C48B9764501346DB9CCC6542 /* Debug */,
+				8A06F9A1A08345939678F927 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA49612F2FCBD2C500888DEC /* Build configuration list for PBXNativeTarget "FamilyPulseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA4961302FCBD2C500888DEC /* Debug */,
+				CA4961312FCBD2C500888DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA0000000000000000000009 /* Build configuration list for PBXProject "FamilyPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA000000000000000000001A /* Debug */,
+				FA000000000000000000001B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA000000000000000000001C /* Build configuration list for PBXNativeTarget "FamilyPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA000000000000000000001D /* Debug */,
+				FA000000000000000000001E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA0000000000000000000006 /* Project object */;
+}
