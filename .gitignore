@@ -42,5 +42,8 @@ ChatGPT Image*
 # Project dashboard (duplicate of landing/dashboard.html)
 dashboard.html
 
+# Deploy script (contains server IP/domain)
+deploy.sh
+
 # Node
 node_modules/
