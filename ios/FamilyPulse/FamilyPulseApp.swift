@@ -91,24 +91,12 @@ struct FamilyPulseApp: App {
         WindowGroup {
             ContentView(store: store)
                 .onOpenURL { url in
+                    print("[WeChat] onOpenURL: \(url)")
                     if AppConfiguration.isWeChatEnabled {
-                        _ = WeChatService.shared.handleOpenURL(url)
-                    }
-                }
-                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
-                    if AppConfiguration.isWeChatEnabled,
-                       WeChatService.shared.handleUniversalLink(userActivity) {
-                        return
-                    }
-                    if let url = userActivity.webpageURL {
-                        handleQRDeepLink(url)
+                        let handled = WeChatService.shared.handleOpenURL(url)
+                        print("[WeChat] handleOpenURL result: \(handled)")
                     }
                 }
         }
-    }
-
-    private func handleQRDeepLink(_ url: URL) {
-        guard url.host == "jiaan.online", url.path == "/qr" else { return }
-        NotificationCenter.default.post(name: .qrCodeDeepLink, object: url)
     }
 }
