@@ -111,24 +111,26 @@ final class WeChatService: NSObject, WXApiDelegate {
     private func handleResp(_ resp: BaseResp) {
         guard let authResp = resp as? SendAuthResp else { return }
 
+        // 防止多次回调（URL Scheme + Universal Link 同时触发）导致 continuation 重复恢复
+        guard let continuation = authContinuation else { return }
+        authContinuation = nil
+
         if authResp.errCode == WXSuccess.rawValue {
             guard let code = authResp.code, !code.isEmpty else {
-                authContinuation?.resume(throwing: WeChatLoginError.authFailed(authResp.errCode, "未获取到授权码"))
-                authContinuation = nil
+                continuation.resume(throwing: WeChatLoginError.authFailed(authResp.errCode, "未获取到授权码"))
                 return
             }
-            authContinuation?.resume(returning: code)
+            continuation.resume(returning: code)
         } else {
             switch authResp.errCode {
             case WXErrCodeAuthDeny.rawValue:
-                authContinuation?.resume(throwing: WeChatLoginError.authDenied)
+                continuation.resume(throwing: WeChatLoginError.authDenied)
             case WXErrCodeUserCancel.rawValue:
-                authContinuation?.resume(throwing: WeChatLoginError.authCancelled)
+                continuation.resume(throwing: WeChatLoginError.authCancelled)
             default:
-                authContinuation?.resume(throwing: WeChatLoginError.authFailed(authResp.errCode, authResp.errStr))
+                continuation.resume(throwing: WeChatLoginError.authFailed(authResp.errCode, authResp.errStr))
             }
         }
-        authContinuation = nil
     }
 }
 
