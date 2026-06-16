@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		85BC7382A2844A1EA6B77242 /* FamilyPulseWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CA1F11FD2FD155F200E6ED8C /* FamilyPulseWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		85BC7382A2844A1EA6B77242 /* FamilyPulseWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CA1F11FD2FD155F200E6ED8C /* FamilyPulseWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ACA3DBAB03ED97F6FDBE2285 /* Pods_FamilyPulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1608CF5DE2973D15F464627F /* Pods_FamilyPulse.framework */; };
 		D00000000000000000000001 /* FamilyPulse/ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000001 /* FamilyPulse/ContentView.swift */; };
 		D00000000000000000000002 /* FamilyPulse/Features/AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10000000000000000000002 /* FamilyPulse/Features/AppointmentsView.swift */; };
@@ -45,15 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		65BA00EFA00E4723B68D6260 /* Embed Foundation Extensions */ = {
+		65BA00EFA00E4723B68D6260 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				85BC7382A2844A1EA6B77242 /* FamilyPulseWidget.appex in Embed Foundation Extensions */,
+				85BC7382A2844A1EA6B77242 /* FamilyPulseWidget.appex in Embed App Extensions */,
 			);
-			name = "Embed Foundation Extensions";
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -256,7 +256,7 @@
 				FA000000000000000000000A /* Sources */,
 				FA000000000000000000000B /* Frameworks */,
 				FA000000000000000000000C /* Resources */,
-				65BA00EFA00E4723B68D6260 /* Embed Foundation Extensions */,
+				65BA00EFA00E4723B68D6260 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -279,7 +279,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2650;
-				LastUpgradeCheck = 2700;
+				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					AF2D471FF1D6473F8AFD76B1 = {
 						CreatedOnToolsVersion = 26.5;
@@ -535,7 +535,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -600,7 +599,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -665,8 +663,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 96UBFN3CKV;
 				ENABLE_PREVIEWS = NO;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "家安";
 				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wx2566b5d6902fd8be);}\n)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
@@ -703,8 +700,7 @@
 				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = 96UBFN3CKV;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "家安";
 				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wx2566b5d6902fd8be);}\n)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
