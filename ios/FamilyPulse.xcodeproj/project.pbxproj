@@ -665,7 +665,7 @@
 				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "家安";
-				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wxYOUR_APP_ID_HERE);}\n)";
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wx2566b5d6902fd8be);}\n)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_LSApplicationQueriesSchemes = "weixin weixinULAPI weixinURLParamsAPI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "扫描二维码以加入家庭或激活订阅";
@@ -702,7 +702,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "家安";
-				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wxYOUR_APP_ID_HERE);}\n)";
+				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wx2566b5d6902fd8be);}\n)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_LSApplicationQueriesSchemes = "weixin weixinULAPI weixinURLParamsAPI";
 				INFOPLIST_KEY_NSCameraUsageDescription = "扫描二维码以加入家庭或激活订阅";
