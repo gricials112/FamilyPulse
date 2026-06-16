@@ -44,14 +44,19 @@ final class WeChatService: NSObject, WXApiDelegate {
     }
 
     func register() {
-        WXApi.registerApp(
+        let ret = WXApi.registerApp(
             AppConfiguration.wechatAppID,
             universalLink: AppConfiguration.wechatUniversalLink
         )
+        print("[WeChat] registerApp result: \(ret)")
     }
 
     var isWXAppInstalled: Bool {
-        WXApi.isWXAppInstalled()
+        // WXApi.isWXAppInstalled() 在 iOS 14+ 可能因 LSApplicationQueriesSchemes 限制误判，
+        // 额外用 canOpenURL 做备用检测。
+        if WXApi.isWXAppInstalled() { return true }
+        guard let url = URL(string: "weixin://") else { return false }
+        return UIApplication.shared.canOpenURL(url)
     }
 
     func sendAuthRequest() async throws -> String {
