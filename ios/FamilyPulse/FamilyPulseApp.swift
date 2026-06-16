@@ -97,6 +97,13 @@ struct FamilyPulseApp: App {
                         print("[WeChat] handleOpenURL result: \(handled)")
                     }
                 }
+                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { activity in
+                    print("[WeChat] onContinueUserActivity: \(activity.webpageURL?.absoluteString ?? "nil")")
+                    if AppConfiguration.isWeChatEnabled,
+                       WeChatService.shared.handleUniversalLink(activity) {
+                        print("[WeChat] handleUniversalLink handled")
+                    }
+                }
         }
     }
 }
