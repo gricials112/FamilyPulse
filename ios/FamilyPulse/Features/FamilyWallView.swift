@@ -295,6 +295,9 @@ private struct ElderTodayCard: View {
     @State private var showAddAction = false
     @State private var showSubscriptionPromotion = false
     @State private var cardPage = 1
+    @State private var editingAction: CareAction?
+    @State private var showDeleteConfirmation = false
+    @State private var deletingAction: CareAction?
 
     private var completedCount: Int {
         elder.actions.filter(\.isCompleted).count
@@ -361,12 +364,16 @@ private struct ElderTodayCard: View {
                                 .accessibilityLabel("\(elder.name)\(action.title)")
                                 .accessibilityHint(action.isCompleted ? "今天已经完成" : "双击记录今天已完成")
                                 .contextMenu {
-                                    if action.actionKey.hasPrefix("custom_") {
-                                        Button(role: .destructive) {
-                                            store.deleteCustomAction(actionKey: action.actionKey, for: elder.id)
-                                        } label: {
-                                            Label("删除「\(action.title)」", systemImage: "trash")
-                                        }
+                                    Button {
+                                        editingAction = action
+                                    } label: {
+                                        Label("编辑「\(action.title)」", systemImage: "pencil")
+                                    }
+                                    Button(role: .destructive) {
+                                        deletingAction = action
+                                        showDeleteConfirmation = true
+                                    } label: {
+                                        Label("删除「\(action.title)」", systemImage: "trash")
                                     }
                                 }
                             }
@@ -409,6 +416,24 @@ private struct ElderTodayCard: View {
         .sheet(isPresented: $showAddAction) { addActionSheet }
         .sheet(isPresented: $showSubscriptionPromotion) {
             SubscriptionPromotionView(store: store)
+        }
+        .sheet(item: $editingAction) { action in
+            EditActionSheet(
+                store: store,
+                elderId: elder.id,
+                action: action,
+                isPresented: $editingAction
+            )
+        }
+        .alert("确认删除", isPresented: $showDeleteConfirmation, presenting: deletingAction) { action in
+            Button(role: .destructive) {
+                store.deleteCustomAction(actionKey: action.actionKey, for: elder.id)
+            } label: {
+                Text("删除「\(action.title)」")
+            }
+            Button("取消", role: .cancel) {}
+        } message: { action in
+            Text("确定要删除「\(action.title)」吗？删除后此操作将从所有家庭成员中移除。")
         }
     }
 
@@ -541,6 +566,74 @@ struct AddCustomActionSheet: View {
             }
         }
         .presentationDetents([.medium, .large])
+    }
+}
+
+struct EditActionSheet: View {
+    var store: FamilyStore
+    var elderId: UUID
+    var action: CareAction
+    @Binding var isPresented: CareAction?
+    @State private var title: String = ""
+    @State private var selectedIcon: String = "heart.circle.fill"
+
+    private let actionIcons = [
+        "heart.circle.fill", "pills.fill", "heart.text.square.fill",
+        "moon.zzz.fill", "sun.max.fill", "figure.walk",
+        "fork.knife", "cup.and.saucer.fill", "drop.fill",
+        "thermometer.medium", "bandage.fill", "stethoscope",
+        "bed.double.fill", "chair.lounge.fill", "bicycle",
+        "book.fill", "pencil.and.list.clipboard",
+    ]
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 18) {
+                    FamilySectionHeader(title: "操作名称", subtitle: "建议使用老人容易理解的短句。", symbolName: "textformat")
+                    TextField("如 已测血糖", text: $title)
+                        .padding()
+                        .glassSurface(cornerRadius: 18, interactive: true)
+
+                    FamilySectionHeader(title: "选择图标", subtitle: nil, symbolName: "square.grid.3x3")
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 12), count: 5), spacing: 12) {
+                        ForEach(actionIcons, id: \.self) { icon in
+                            Button {
+                                selectedIcon = icon
+                            } label: {
+                                Image(systemName: icon)
+                                    .font(.title2)
+                                    .foregroundStyle(selectedIcon == icon ? FamilyTheme.accent : .primary)
+                                    .frame(width: 52, height: 52)
+                                    .background(selectedIcon == icon ? FamilyTheme.accent.opacity(0.14) : Color.primary.opacity(0.06))
+                                    .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
+                }
+                .padding()
+            }
+            .navigationTitle("编辑操作")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("取消") { isPresented = nil }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("保存") {
+                        store.updateCustomAction(actionKey: action.actionKey, title: title, icon: selectedIcon, for: elderId)
+                        isPresented = nil
+                    }
+                    .disabled(title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                }
+            }
+        }
+        .presentationDetents([.medium, .large])
+        .onAppear {
+            title = action.title
+            selectedIcon = action.symbolName
+        }
     }
 }
 

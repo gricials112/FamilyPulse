@@ -300,6 +300,10 @@ struct FamilyPulseServerClient {
         try await send(path: "/api/families/\(familyId.uuidString)/actions/manage", method: "POST", body: CreateCustomActionRequest(actionKey: actionKey, title: title, icon: icon, sortOrder: 100, elderId: elderId))
     }
 
+    func updateCustomAction(familyId: UUID, elderId: UUID, actionKey: String, title: String, icon: String) async throws -> ServerCustomAction {
+        try await send(path: "/api/families/\(familyId.uuidString)/actions/manage/\(actionKey)?elderId=\(elderId.uuidString)", method: "PUT", body: UpdateCustomActionRequest(title: title, icon: icon))
+    }
+
     func deleteCustomAction(familyId: UUID, elderId: UUID, actionKey: String) async throws {
         let _: String? = try await send(path: "/api/families/\(familyId.uuidString)/actions/manage/\(actionKey)?elderId=\(elderId.uuidString)", method: "DELETE")
     }
@@ -523,6 +527,11 @@ private struct CreateCustomActionRequest: Encodable {
     var icon: String
     var sortOrder: Int
     var elderId: UUID
+}
+
+private struct UpdateCustomActionRequest: Encodable {
+    var title: String
+    var icon: String
 }
 
 struct ServerCustomAction: Decodable, Identifiable, Equatable {

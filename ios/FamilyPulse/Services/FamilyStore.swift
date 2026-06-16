@@ -171,6 +171,22 @@ final class FamilyStore {
         }
     }
 
+    func updateCustomAction(actionKey: String, title: String, icon: String, for elderId: UUID) {
+        guard let familyId = selectedFamily?.id else { return }
+        let trimmedTitle = title.trimmingCharacters(in: .whitespacesAndNewlines)
+        let trimmedIcon = icon.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmedTitle.isEmpty else {
+            statusMessage = String(localized: "请输入操作名称")
+            return
+        }
+        let finalIcon = trimmedIcon.isEmpty ? "heart.circle.fill" : trimmedIcon
+        runFamilyTask("正在更新操作") {
+            _ = try await self.client.updateCustomAction(familyId: familyId, elderId: elderId, actionKey: actionKey, title: trimmedTitle, icon: finalIcon)
+            try await self.reloadOverview()
+            self.statusMessage = String(localized: "已更新")
+        }
+    }
+
     func deleteCustomAction(actionKey: String, for elderId: UUID) {
         guard let familyId = selectedFamily?.id else { return }
         runFamilyTask("正在删除操作") {

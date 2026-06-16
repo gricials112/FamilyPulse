@@ -1419,6 +1419,9 @@
         }
       }
     },
+    "已更新" : {
+
+    },
     "已有订阅码？" : {
       "comment" : "User-facing string in FamilyPulse app",
       "localizations" : {
@@ -2677,6 +2680,9 @@
         }
       }
     },
+    "确定要删除「%@」吗？删除后此操作将从所有家庭成员中移除。" : {
+
+    },
     "确认删除" : {
 
     },
@@ -2776,6 +2782,15 @@
           }
         }
       }
+    },
+    "编辑" : {
+
+    },
+    "编辑「%@」" : {
+
+    },
+    "编辑操作" : {
+
     },
     "网络连接失败，请检查网络设置" : {
       "comment" : "User-facing string in FamilyPulse app",
@@ -3146,6 +3161,9 @@
           }
         }
       }
+    },
+    "请输入操作名称" : {
+
     },
     "请输入老人姓名" : {
       "comment" : "User-facing string in FamilyPulse app",

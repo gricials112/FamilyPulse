@@ -3,5 +3,5 @@ platform :ios, '18.0'
 target 'FamilyPulse' do
   use_frameworks!
 
-  pod 'WechatOpenSDK-XCFramework'
+  pod 'WechatOpenSDK-XCFramework', :path => 'Vendor/WechatOpenSDK-XCFramework'
 end

@@ -2,6 +2,9 @@ import SwiftUI
 
 struct ElderOneTapHomeView: View {
     var store: FamilyStore
+    @State private var editingAction: CareAction?
+    @State private var deletingAction: CareAction?
+    @State private var showDeleteConfirmation = false
 
     private var elder: ElderStatus? {
         store.selectedElder
@@ -27,6 +30,24 @@ struct ElderOneTapHomeView: View {
             .navigationTitle("今日照护")
             .navigationBarTitleDisplayMode(.large)
             .task(id: store.autoRefreshIntervalSeconds) { await autoRefreshLoop() }
+            .sheet(item: $editingAction) { action in
+                EditActionSheet(
+                    store: store,
+                    elderId: actionSourceElderId(for: action.actionKey),
+                    action: action,
+                    isPresented: $editingAction
+                )
+            }
+            .alert("确认删除", isPresented: $showDeleteConfirmation, presenting: deletingAction) { action in
+                Button(role: .destructive) {
+                    store.deleteCustomAction(actionKey: action.actionKey, for: actionSourceElderId(for: action.actionKey))
+                } label: {
+                    Text("删除「\(action.title)」")
+                }
+                Button("取消", role: .cancel) {}
+            } message: { action in
+                Text("确定要删除「\(action.title)」吗？删除后此操作将从所有家庭成员中移除。")
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Menu {
@@ -110,9 +131,29 @@ struct ElderOneTapHomeView: View {
                     .accessibilityIdentifier("elderAction-\(action.actionKey)")
                     .accessibilityLabel(action.title)
                     .accessibilityHint(action.isCompleted ? "今天已经完成" : "双击记录今天已完成")
+                    .contextMenu {
+                        Button {
+                            editingAction = action
+                        } label: {
+                            Label("编辑", systemImage: "pencil")
+                        }
+                        Button(role: .destructive) {
+                            deletingAction = action
+                            showDeleteConfirmation = true
+                        } label: {
+                            Label("删除", systemImage: "trash")
+                        }
+                    }
                 }
             }
         }
+    }
+
+    private func actionSourceElderId(for actionKey: String) -> UUID {
+        if let elder, elder.actions.contains(where: { $0.actionKey == actionKey }) {
+            return elder.id
+        }
+        return store.selectedElderId ?? UUID()
     }
 
     private func hapticFeedback(_ style: UIImpactFeedbackGenerator.FeedbackStyle) {

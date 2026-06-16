@@ -2,15 +2,15 @@ PODS:
   - WechatOpenSDK-XCFramework (2.0.5)
 
 DEPENDENCIES:
-  - WechatOpenSDK-XCFramework
+  - WechatOpenSDK-XCFramework (from `Vendor/WechatOpenSDK-XCFramework`)
 
-SPEC REPOS:
-  trunk:
-    - WechatOpenSDK-XCFramework
+EXTERNAL SOURCES:
+  WechatOpenSDK-XCFramework:
+    :path: Vendor/WechatOpenSDK-XCFramework
 
 SPEC CHECKSUMS:
-  WechatOpenSDK-XCFramework: ff342ae616bb86df3d236aca38059dfd4bc4a949
+  WechatOpenSDK-XCFramework: 82c6fd287287ef0663ebe3fabec1ef8aa340ac0a
 
-PODFILE CHECKSUM: 3d986ff5d467fc3a92e178dddcaa16abe799bb61
+PODFILE CHECKSUM: 831407c7f43fdb6edbc10228bbc0e56dd46f38b2
 
 COCOAPODS: 1.16.2
