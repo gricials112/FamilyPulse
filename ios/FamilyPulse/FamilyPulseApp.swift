@@ -90,6 +90,25 @@ struct FamilyPulseApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(store: store)
+                .onOpenURL { url in
+                    if AppConfiguration.isWeChatEnabled {
+                        _ = WeChatService.shared.handleOpenURL(url)
+                    }
+                }
+                .onContinueUserActivity(NSUserActivityTypeBrowsingWeb) { userActivity in
+                    if AppConfiguration.isWeChatEnabled,
+                       WeChatService.shared.handleUniversalLink(userActivity) {
+                        return
+                    }
+                    if let url = userActivity.webpageURL {
+                        handleQRDeepLink(url)
+                    }
+                }
         }
+    }
+
+    private func handleQRDeepLink(_ url: URL) {
+        guard url.host == "jiaan.online", url.path == "/qr" else { return }
+        NotificationCenter.default.post(name: .qrCodeDeepLink, object: url)
     }
 }
