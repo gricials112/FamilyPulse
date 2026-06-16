@@ -663,7 +663,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 96UBFN3CKV;
 				ENABLE_PREVIEWS = NO;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "家安";
 				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wx2566b5d6902fd8be);}\n)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
@@ -700,7 +701,8 @@
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 96UBFN3CKV;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "家安";
 				INFOPLIST_KEY_CFBundleURLTypes = "(\n{CFBundleURLName = \"com.lwj.FamilyPulse\"; CFBundleURLSchemes = (wx2566b5d6902fd8be);}\n)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
