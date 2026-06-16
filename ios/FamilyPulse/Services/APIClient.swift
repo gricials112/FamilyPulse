@@ -288,6 +288,10 @@ struct FamilyPulseServerClient {
         try await send(path: "/api/users/wechat", method: "POST", body: BindWeChatRequest(code: code, openId: openId, unionId: unionId, nickname: nickname, avatarUrl: nil))
     }
 
+    func deleteAccount() async throws {
+        let _: [String: String] = try await send(path: "/api/account", method: "DELETE")
+    }
+
     func listCustomActions(familyId: UUID) async throws -> [ServerCustomAction] {
         try await send(path: "/api/families/\(familyId.uuidString)/actions/manage", method: "GET")
     }

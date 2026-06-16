@@ -511,6 +511,61 @@ final class FamilyStore {
         statusMessage = String(localized: "")
     }
 
+    func deleteAccount() async -> Bool {
+        isSyncing = true
+        statusMessage = String(localized: "正在删除账号")
+        do {
+            try await client.deleteAccount()
+            // Clear all local state after successful server-side deletion
+            currentUser = nil
+            client.authToken = ""
+            KeychainStore.delete(key: "authToken")
+            KeychainStore.delete(key: "currentUser")
+            userMode = .family
+            families = []
+            selectedFamily = nil
+            selectedElderId = nil
+            subscriptionTier = "FREE"
+            subscriptionExpiresAt = nil
+            canQueueOfflineActions = false
+            canUsePushNotifications = false
+            pushNotificationsEnabled = false
+            pushStatusMessage = ""
+            syncDelaySeconds = 0
+            maxCustomActionsPerElder = 0
+            historyRetentionDays = 90
+            historyDailyLimit = 10
+            subscriptionActivationCode = nil
+            activationDeviceLimit = 0
+            activationUsedCount = 0
+            actionHistory = []
+            pendingCareActions = []
+            savePendingCareActions()
+            UserDefaults.standard.removeObject(forKey: "cachedSubscriptionStatus")
+            UserDefaults.standard.set(false, forKey: pushEnabledKey)
+            snapshot = FamilySnapshot(
+                familyId: nil,
+                familyName: "",
+                inviteCode: "",
+                members: [],
+                elders: [],
+                feed: [],
+                records: [],
+                appointments: [],
+                lastUpdatedAt: Date()
+            )
+            SharedDefaults.clearSession()
+            phase = .signedOut
+            statusMessage = String(localized: "账号已删除")
+            isSyncing = false
+            return true
+        } catch {
+            statusMessage = String(localized: "账号删除失败：\(error.localizedDescription)")
+            isSyncing = false
+            return false
+        }
+    }
+
     func createFamily(name: String) {
         let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmedName.isEmpty else {

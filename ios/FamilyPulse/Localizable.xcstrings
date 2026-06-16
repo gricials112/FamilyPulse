@@ -772,6 +772,9 @@
         }
       }
     },
+    "删除账号" : {
+
+    },
     "加入失败，请稍后重试" : {
       "comment" : "User-facing string in FamilyPulse app",
       "localizations" : {
@@ -2276,6 +2279,12 @@
         }
       }
     },
+    "正在删除账号" : {
+
+    },
+    "正在删除账号..." : {
+
+    },
     "正在加载" : {
       "comment" : "User-facing string in FamilyPulse app",
       "localizations" : {
@@ -2363,6 +2372,12 @@
           }
         }
       }
+    },
+    "此操作不可撤销！删除后所有个人数据将被永久清除。确定要删除账号吗？" : {
+
+    },
+    "此操作不可撤销。删除账号后：" : {
+
     },
     "没有可撤销记录" : {
       "comment" : "User-facing string in FamilyPulse app",
@@ -2661,6 +2676,12 @@
           }
         }
       }
+    },
+    "确认删除" : {
+
+    },
+    "确认删除账号" : {
+
     },
     "科室" : {
       "comment" : "User-facing string in FamilyPulse app",
@@ -3101,6 +3122,9 @@
         }
       }
     },
+    "请输入 DELETE 确认删除" : {
+
+    },
     "请输入你的名字" : {
       "comment" : "User-facing string in FamilyPulse app",
       "localizations" : {
@@ -3212,6 +3236,9 @@
         }
       }
     },
+    "账号删除失败：%@" : {
+
+    },
     "账号安全" : {
       "comment" : "User-facing string in FamilyPulse app",
       "localizations" : {
@@ -3222,6 +3249,9 @@
           }
         }
       }
+    },
+    "账号已删除" : {
+
     },
     "购买失败: \\(error.localizedDescription)" : {
       "comment" : "StoreManager - purchase failed",
@@ -3245,6 +3275,9 @@
           }
         }
       }
+    },
+    "输入 DELETE" : {
+
     },
     "这台手机给谁使用？" : {
       "comment" : "User-facing string in FamilyPulse app",

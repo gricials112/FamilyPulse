@@ -346,29 +346,32 @@ private struct ElderTodayCard: View {
                     .tag(0)
 
                     // Page 1: Action buttons (default)
-                    VStack(spacing: 10) {
-                        ForEach(elder.actions) { action in
-                            Button {
-                                if !action.isCompleted {
-                                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(spacing: 10) {
+                            ForEach(elder.actions) { action in
+                                Button {
+                                    if !action.isCompleted {
+                                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                                    }
+                                    store.complete(actionKey: action.actionKey, for: elder.id)
+                                } label: {
+                                    CareActionCompactRow(action: action, elderName: elder.name)
                                 }
-                                store.complete(actionKey: action.actionKey, for: elder.id)
-                            } label: {
-                                CareActionCompactRow(action: action, elderName: elder.name)
-                            }
-                            .buttonStyle(ActionPressStyle(isCompleted: action.isCompleted))
-                            .accessibilityLabel("\(elder.name)\(action.title)")
-                            .accessibilityHint(action.isCompleted ? "今天已经完成" : "双击记录今天已完成")
-                            .contextMenu {
-                                if action.actionKey.hasPrefix("custom_") {
-                                    Button(role: .destructive) {
-                                        store.deleteCustomAction(actionKey: action.actionKey, for: elder.id)
-                                    } label: {
-                                        Label("删除「\(action.title)」", systemImage: "trash")
+                                .buttonStyle(ActionPressStyle(isCompleted: action.isCompleted))
+                                .accessibilityLabel("\(elder.name)\(action.title)")
+                                .accessibilityHint(action.isCompleted ? "今天已经完成" : "双击记录今天已完成")
+                                .contextMenu {
+                                    if action.actionKey.hasPrefix("custom_") {
+                                        Button(role: .destructive) {
+                                            store.deleteCustomAction(actionKey: action.actionKey, for: elder.id)
+                                        } label: {
+                                            Label("删除「\(action.title)」", systemImage: "trash")
+                                        }
                                     }
                                 }
                             }
                         }
+                        .padding(.vertical, 4)
                     }
                     .tag(1)
                 }

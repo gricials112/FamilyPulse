@@ -32,6 +32,10 @@ struct SettingsView: View {
     @State private var showQRScanner = false
     @State private var showPushSubscriptionPromotion = false
 
+    // Delete account state
+    @State private var showDeleteAccountConfirmation = false
+    @State private var deleteAccountConfirmText = ""
+
     // Card flip animation
     @State private var isFlipped = false
 
@@ -97,6 +101,13 @@ struct SettingsView: View {
                     }
                     showQRScanner = false
                 }
+            }
+            .sheet(isPresented: $showDeleteAccountConfirmation) {
+                DeleteAccountConfirmationView(
+                    store: store,
+                    isPresented: $showDeleteAccountConfirmation,
+                    confirmText: $deleteAccountConfirmText
+                )
             }
             .task {
                 guard !AppRuntime.isRunningUnitTests else { return }
@@ -264,10 +275,10 @@ struct SettingsView: View {
     /// Simple subscription panel (no flip) — shows plans, features, and legal links directly visible.
     private var simpleSubscriptionPanel: some View {
         GlassCard(cornerRadius: 28) {
-            VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .center, spacing: 0) {
                 // Header
                 HStack {
-                    VStack(alignment: .leading, spacing: 4) {
+                    VStack(alignment: .center, spacing: 4) {
                         Text("家安 · Premium")
                             .font(.title2.bold())
                             .foregroundStyle(
@@ -1111,6 +1122,20 @@ struct SettingsView: View {
                     if AppConfiguration.isWeChatEnabled {
                         weChatBindingContent(user: user)
                     }
+
+                    Divider()
+                        .padding(.vertical, 4)
+
+                    Button(role: .destructive) {
+                        showDeleteAccountConfirmation = true
+                        deleteAccountConfirmText = ""
+                    } label: {
+                        Label("删除账号", systemImage: "trash.fill")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.red)
+                    .controlSize(.large)
                 }
             }
         }
@@ -1685,3 +1710,138 @@ final class ScannerController: UIViewController, AVCaptureMetadataOutputObjectsD
 }
 
 // MARK: - Add Custom Action Sheet
+
+// MARK: - Delete Account Confirmation
+
+struct DeleteAccountConfirmationView: View {
+    var store: FamilyStore
+    @Binding var isPresented: Bool
+    @Binding var confirmText: String
+    @State private var showFinalAlert = false
+    @State private var isDeleting = false
+
+    private let requiredText = "DELETE"
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(spacing: 20) {
+                    // Warning icon
+                    Image(systemName: "exclamationmark.triangle.fill")
+                        .font(.system(size: 48))
+                        .foregroundStyle(.red)
+                        .padding(.top, 8)
+
+                    Text("删除账号")
+                        .font(.title2.bold())
+
+                    Text("此操作不可撤销。删除账号后：")
+                        .font(.headline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+
+                    // Bullet points
+                    VStack(alignment: .leading, spacing: 12) {
+                        deleteWarningRow(icon: "person.crop.circle.badge.xmark",
+                                        text: "您的用户账号资料将被永久删除且无法恢复")
+                        deleteWarningRow(icon: "house.fill",
+                                        text: "您在家庭同步墙、照护记录、复查安排中的个人数据将被删除或匿名化")
+                        deleteWarningRow(icon: "clock.arrow.circlepath",
+                                        text: "您的操作历史记录将被删除")
+                        deleteWarningRow(icon: "ipad.and.iphone",
+                                        text: "当前设备将退出登录，需重新注册才能使用")
+                        deleteWarningRow(icon: "creditcard.fill",
+                                        text: "如您有 App Store 订阅，删除账号不会自动取消 Apple 订阅，请在 Apple ID 订阅管理中自行取消续订")
+                    }
+                    .padding(.horizontal, 8)
+
+                    Divider()
+
+                    // Confirmation input
+                    VStack(spacing: 8) {
+                        Text("请输入 DELETE 确认删除")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                        SecureField("输入 DELETE", text: $confirmText)
+                            .textInputAutocapitalization(.characters)
+                            .autocorrectionDisabled()
+                            .padding()
+                            .background(.secondary.opacity(0.08), in: RoundedRectangle(cornerRadius: 14))
+                            .multilineTextAlignment(.center)
+                            .font(.title3.monospaced().weight(.bold))
+                    }
+                    .padding(.horizontal, 4)
+                }
+                .padding()
+            }
+            .overlay {
+                if isDeleting {
+                    ZStack {
+                        Color.black.opacity(0.3)
+                            .ignoresSafeArea()
+                        VStack(spacing: 12) {
+                            ProgressView()
+                                .controlSize(.large)
+                            Text("正在删除账号...")
+                                .font(.headline)
+                                .foregroundStyle(.white)
+                        }
+                        .padding(24)
+                        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 16))
+                    }
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("取消") {
+                        isPresented = false
+                        confirmText = ""
+                    }
+                    .disabled(isDeleting)
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("确认删除账号") {
+                        showFinalAlert = true
+                    }
+                    .font(.headline)
+                    .foregroundStyle(.red)
+                    .disabled(confirmText.trimmingCharacters(in: .whitespaces) != requiredText || isDeleting)
+                }
+            }
+            .alert("确认删除账号", isPresented: $showFinalAlert) {
+                Button("取消", role: .cancel) {}
+                Button("确认删除", role: .destructive) {
+                    performDelete()
+                }
+            } message: {
+                Text("此操作不可撤销！删除后所有个人数据将被永久清除。确定要删除账号吗？")
+            }
+        }
+        .presentationDetents([.large])
+    }
+
+    private func performDelete() {
+        isDeleting = true
+        confirmText = ""
+        Task {
+            let success = await store.deleteAccount()
+            isDeleting = false
+            if success {
+                isPresented = false
+            }
+        }
+    }
+
+    private func deleteWarningRow(icon: String, text: String) -> some View {
+        HStack(spacing: 12) {
+            Image(systemName: icon)
+                .font(.title3)
+                .foregroundStyle(.red.opacity(0.7))
+                .frame(width: 28)
+            Text(text)
+                .font(.subheadline)
+                .foregroundStyle(.primary)
+            Spacer()
+        }
+    }
+}
