@@ -70,27 +70,29 @@ final class WeChatService: NSObject, WXApiDelegate {
         req.scope = "snsapi_userinfo"
         req.state = state
 
-        let sent = await WXApi.send(req)
-        guard sent else {
-            throw WeChatLoginError.sendFailed
-        }
+        return try await withCheckedThrowingContinuation { continuation in
+            MainActor.assumeIsolated {
+                self.authContinuation = continuation
+            }
 
-        return try await withThrowingTaskGroup(of: String.self) { group in
-            group.addTask { [self] in
-                try await withCheckedThrowingContinuation { continuation in
-                    MainActor.assumeIsolated {
-                        self.authContinuation = continuation
+            // 发送请求到微信，回调中处理结果
+            WXApi.send(req) { success in
+                if !success {
+                    Task { @MainActor in
+                        guard let cont = self.authContinuation else { return }
+                        self.authContinuation = nil
+                        cont.resume(throwing: WeChatLoginError.sendFailed)
                     }
                 }
             }
-            group.addTask {
-                try await Task.sleep(nanoseconds: 30_000_000_000)
-                throw WeChatLoginError.authFailed(-1, "微信授权超时，请重试")
+
+            // 30秒超时
+            Task { @MainActor in
+                try? await Task.sleep(nanoseconds: 30_000_000_000)
+                guard let cont = self.authContinuation else { return }
+                self.authContinuation = nil
+                cont.resume(throwing: WeChatLoginError.authFailed(-1, "微信授权超时，请重试"))
             }
-            defer { authContinuation = nil }
-            let result = try await group.next()!
-            group.cancelAll()
-            return result
         }
     }
 
