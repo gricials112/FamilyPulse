@@ -18,7 +18,8 @@ if ! command -v pod &> /dev/null; then
 fi
 
 # Install Pod dependencies
-cd "$CI_PRIMARY_REPOSITORY_PATH"
+# 仓库根目录包含 ios/ 和 backend/，Podfile 在 ios/ 下
+cd "${CI_PRIMARY_REPOSITORY_PATH}/ios"
 pod install --repo-update
 
 echo "CocoaPods installation complete."
